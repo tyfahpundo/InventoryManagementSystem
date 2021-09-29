@@ -1,22 +1,18 @@
-package zw.co.afrosoft.domain;
+package zw.co.afrosoft.domain.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.Date;
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class EmployeeDetailsResponse {
     private Long employeeId;
     private String firstName;
     private String lastName;
     private int mobileNumber;
     private String email;
     private Date dob;
-
-
 }
